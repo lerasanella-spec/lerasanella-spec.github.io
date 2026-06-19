@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ella B. Lerasan | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#121212;
+    color:#f5f5f5;
+}
+
+/* NAVIGATION */
+
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background:#1a1a1a;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+    border-bottom:1px solid #333;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:700;
+    color:#d4d4d4;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#9c9c9c;
+}
+
+/* HERO SECTION */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:120px 10%;
+    gap:50px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.tag{
+    background:#2d2d2d;
+    display:inline-block;
+    padding:10px 20px;
+    border-radius:30px;
+    margin-bottom:20px;
+    color:#cfcfcf;
+}
+
+.hero-text h1{
+    font-size:70px;
+    margin-bottom:10px;
+}
+
+.hero-text span{
+    color:#8f8f8f;
+}
+
+.hero-text p{
+    font-size:18px;
+    line-height:1.8;
+    color:#d3d3d3;
+    margin-top:20px;
+}
+
+.buttons{
+    margin-top:30px;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#444;
+    color:white;
+    padding:15px 30px;
+    border-radius:8px;
+    margin-right:15px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#666;
+}
+
+.profile img{
+    width:380px;
+    height:380px;
+    object-fit:cover;
+    border-radius:50%;
+    border:3px solid #666;
+}
+
+/* SECTION */
+
+section{
+    padding:100px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+    color:#dcdcdc;
+}
+
+/* ABOUT */
+
+.about{
+    background:#1a1a1a;
+}
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    line-height:2;
+    color:#cfcfcf;
+}
+
+/* SKILLS */
+
+.skills-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.skill-card{
+    background:#1f1f1f;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    transition:.3s;
+}
+
+.skill-card:hover{
+    transform:translateY(-5px);
+}
+
+.skill-card h3{
+    margin-bottom:10px;
+}
+
+/* PROJECTS */
+
+.projects{
+    background:#1a1a1a;
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.project-card{
+    background:#242424;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+.project-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.project-content{
+    padding:20px;
+}
+
+.project-content h3{
+    margin-bottom:10px;
+}
+
+.project-content p{
+    color:#cfcfcf;
+    line-height:1.6;
+}
+
+/* CONTACT */
+
+.contact-container{
+    text-align:center;
+}
+
+.contact-container p{
+    margin:15px 0;
+    color:#cfcfcf;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#0d0d0d;
+    border-top:1px solid #333;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.hero{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:50px;
+}
+
+.profile img{
+    width:280px;
+    height:280px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+    <div class="logo">PORTFOLIO </div>
+
+    <ul>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+    </ul>
+</nav>
+
+<!-- HOME -->
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <div class="tag">
+            BACHELOR OF SCIENCE IN INFORMATION SYSTEMS
+        </div>
+
+        <h1>Hi, I'm <span>Ella!</span></h1>
+
+        <p>
+            A Bachelor of Science in Information Systems (BSIS) student with a passion for innovation,
+            creativity, and continuous learning. This portfolio showcases my academic projects,
+            achievements, and experiences that reflect my dedication to growth,
+            problem-solving, and excellence.
+        </p>
+
+        <p>
+            Through my work, I strive to develop meaningful ideas and solutions while embracing new
+            challenges and opportunities. Each project represents a step in my journey toward becoming
+            a skilled and innovative professional.
+        </p>
+
+        <div class="buttons">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+
+    </div>
+
+    <div class="profile">
+        <img src="profile.jpg" alt="Ella">
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="about">
+
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about-container">
+
+        <div class="about-card">
+
+            <p><strong>Full Name:</strong> Ella B. Lerasan</p>
+
+            <p><strong>Age:</strong> 21 Years Old</p>
+            <p><strong>Address:</strong> Catumbal, La Paz, Carmen</p>
+
+            <p><strong>Program:</strong> Bachelor of Science in Information Systems</p>
+
+            <p><strong>School:</strong> Davao del Norte State College</p>
+
+        </div>
+
+
+</div>
+    
+            </p>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <h3>HTML & CSS</h3>
+            <p>Frontend Web Development</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>JavaScript</h3>
+            <p>Interactive Web Applications</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Figma</h3>
+            <p>UI/UX Design</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>System Analysis</h3>
+            <p>Requirements Gathering & Design</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects" class="projects">
+
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project-grid">
+
+        </div>
+
+    </div>
+
+    <!-- ========================= -->
+    <h2 class="year-level">1st Year Milestone</h2>
+
+<div class="project-grid">
+
+    <!-- PROJECT 1 -->
+    <div class="project-card">
+
+        <img src="1.jpg" alt="Introduction of Computing">
+
+        <div class="project-content">
+
+            <h3>L&J Pastries Study Hub Platform</h3>
+
+            <p>
+                A web-based platform designed to promote L&J Pastries while providing students with a convenient online study hub. 
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card">
+
+        <img src="2.jpg" alt="Introduction to Computing">
+
+        <div class="project-content">
+
+            <h3>Introduction to Computing</h3>
+
+            <p>
+                Constructed digital vector illustrations and
+                layout mockups within introductory coursework.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="project-card">
+
+        <img src="3.jpg" alt="Designing Tarpaulin using Photoshop ">
+
+        <div class="project-content">
+
+            <h3>Designing Tarpaulin using Photoshop</h3>
+
+            <p> Creative Design 
+                
+        </div>
+
+    </div>
+
+    <!-- PROJECT 4 -->
+    <div class="project-card">
+
+        <img src="4.jpg" alt="Introduction of Computing">
+
+        <div class="project-content">
+
+            <h3>Simple Robot </h3>
+
+            <p>
+                
+        </div>
+
+    </div>
+
+    <!-- PROJECT 5 -->
+    <div class="project-card">
+
+        <img src="6.jpg" alt="Programming Project">
+
+        <div class="project-content">
+
+            <h3>Simple Calculator</h3>
+
+            <p>
+                Creating a Calculator using JavaScript.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- PROJECT 6 -->
+    <div class="project-card">
+
+        <img src="7.jpg" alt="Programming Project">
+
+        <div class="project-content">
+
+            <h3>Final Project</h3>
+
+            <p>
+                Diwata Pares Overload Order System.
+            
+            </p>
+        </div>
+
+    </div>
+<div class="project-card">
+
+    <img src="5.jpg" alt="">
+
+    <div class="project-content">
+
+        <h3>Short Film</h3>
+
+        <p>
+            Created a short film that showcases storytelling,
+             and cinematatography.
+        </p>
+
+    </div>
+
+</div>
+</div>
+<br><br><br>
+
+<!-- ========================= -->
+<!-- 2ND YEAR MILESTONE -->
+<!-- ========================= -->
+
+<h2 class="year-level">2nd Year Milestone</h2>
+
+<div class="project-grid">
+
+    <!-- PROJECT 1 -->
+    <div class="project-card">
+
+        <img src="9.jpg" alt="HCI Project">
+        <div class="project-content">
+
+            <h3>Human-Computer Interaction (HCI)</h3>
+
+            <p>
+                Designed and evaluated user interfaces using Human-Computer
+                Interaction principles. The project focused on usability,
+                accessibility, and improving the overall user experience.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card">
+
+        <div class="project-gallery">
+
+            <img src="8.jpg" alt="Research Presentation">
+
+        </div>
+
+        <div class="project-content">
+
+            <h3>Quantitative Research Poster Showcase</h3>
+
+            <p>
+                Developed and presented a quantitative research poster that
+                effectively communicated research findings through data analysis,
+                visual presentation, and academic reporting.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+    <!-- ========================= -->
+    <!-- 3RD YEAR OUTPUTS -->
+    <!-- ========================= -->
+<br><br><br>
+
+    <h3 class="year-level">Milestone</h3>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+
+            <img src="11.png" alt="HCI">
+
+            <div class="project-content">
+
+                <h3>HCI- (HCI)</h3>
+
+                <p>
+                    A project focused on user-centered design principles,
+                    usability testing, and interface evaluation to improve
+                    user experience.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="project-card">
+
+            <img src="12.png" alt="cert">
+            <img src="13.png" alt="cert">
+
+            <div class="project-content">
+
+                <h3>CERTIFICATES</h3>
+
+                <p>
+                    A personal portfolio showcasing academic projects,
+                    technical skills, achievements, and professional growth
+                    as a BS Information Systems student.
+                </p>
+            </div>
+            
+    </div>
+
+    <div class="project-card ">
+        <img src="14.jpg" alt="photo">
+        <img src="15.jpg" alt="photo">
+        <img src="16.jpg" alt="photo">
+
+    </div>
+    <div class="project-card ">
+        <img src="17.jpg" alt="photo">
+        <img src="18.jpg" alt="photo">
+        <img src="19.jpg" alt="photo">
+        </div>
+
+    <div class="project-card ">
+        <img src="20.png" alt="photo">
+        <img src="21.jpg" alt="photo">
+
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact-container">
+
+        <p><strong>Name:</strong> Ella B. Lerasan</p>
+        <p><strong>Email:</strong>   ellalerasan@gmail.com</p>
+        <p><strong>Facebook:</strong> Ella Barangi-an Lerasan</p>
+        <p><strong>Phone:</strong> 09702445297</p>
+
+    </div>
+
+</section>
+
+<footer>
+     2026 Ella B. Lerasan | Portfolio
+</footer>
+
+</body>
+</html>
